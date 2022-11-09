@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Md: Saiful Bali */
+}
+.Main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: url("./grand-place-brussels-belgium-shutterstock_286144574_a963734c9e.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Belgium {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  border: 3px solid green;
+}
+.Black {
+  width: 34%;
+  height: 100%;
+  background: black;
+}
+.Yellow {
+  width: 33%;
+  height: 100%;
+  background: yellow;
+}
+.Red {
+  width: 34%;
+  height: 100%;
+  background: red;
+}
+.Belgium:hover .Black {
+  background: blue;
+}
+.Belgium:hover .Yellow {
+  background: white;
+}
+.Belgium:hover .Red {
+  background: red;
+}

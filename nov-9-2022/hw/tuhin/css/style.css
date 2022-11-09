@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+}
+
+.potaka {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    border: 10px solid brown;
+}
+
+.kala {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: auto;
+}
+
+.komola {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    margin: auto;
+}
+
+.lal{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    margin: auto;
+}
+
+.potaka:hover .kala {
+    background-color: navy;
+}
+
+.potaka:hover .komola {
+    background-color: white;
+}

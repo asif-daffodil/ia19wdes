@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: grey;
+    display: flex;
+}
+.flag{
+    width: 600px;
+    height: 600px;
+    background: green;
+    margin: auto;
+}
+.black{
+    height: 600px;
+    width: 200px;
+    background-color: #000000;
+    float: left;
+}
+.yellow{
+    height: 600px;
+    width: 200px;
+    background-color: #f5d324;
+    float: left;
+}
+.red{
+    height: 600px;
+    width: 200px;
+    background-color: #c81025;
+    float: left;
+}
+.flag:hover .black{
+    background-color:#002551;
+}
+.flag:hover .yellow{
+    background-color: white;
+}
+.flag:hover .red{
+    background-color: #c81025;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main{
+    width:100%;
+    height: 100vh;
+    background: gray;
+    display: flex;
+}
+.flag{
+    height: 600px;
+    width: 600px;
+    background:red;
+    margin: auto;
+}
+.black{
+    height: 600px;
+    width: 200px;
+    background:black;
+    float: left;
+}
+.yellow{
+        height: 600px;
+        width: 200px;
+        background: yellow;
+        float:left;
+}
+.red{
+        height: 600px;
+        width: 200px;
+        background: red;
+        float: left;
+}
+.flag:hover .black{
+    background: blue;}
+.flag:hover .yellow{
+    background: white}
+.flag:hover .red{
+    background: red;}

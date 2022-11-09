@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flag {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border: 5px solid black;
+}
+.black {
+  width: 33%;
+  height: 100%;
+  background-color: black;
+}
+.yellow {
+  width: 34%;
+  height: 100%;
+  background-color: yellow;
+}
+.red {
+  width: 34%;
+  height: 100%;
+  background-color: red;
+}
+
+.france {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid black;
+}
+
+.blue {
+  width: 33%;
+  height: 100%;
+  background-color: blue;
+}
+.white {
+  width: 34%;
+  height: 100%;
+  background-color: white;
+}
+.red1 {
+  width: 34%;
+  height: 100%;
+  background-color: red;
+}
