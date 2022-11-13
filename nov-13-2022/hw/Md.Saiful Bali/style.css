@@ -1,0 +1,55 @@
+* {
+  /* Md.Saiful Bali */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main1 {
+  background: skyblue;
+}
+.main2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+}
+.card {
+  width: 250px;
+  box-shadow: 0px 0px 10px #000;
+  padding-bottom: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: auto 10px;
+  background: #fff;
+}
+.card > img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card > h2 {
+  color: #dc143b;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.card > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card > button {
+  text-align: center;
+  display: block;
+  background: #dc143b;
+  color: #fff;
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  border-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto;
+  text-transform: uppercase;
+}
