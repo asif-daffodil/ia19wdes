@@ -3,3 +3,68 @@
   padding: 0;
   box-sizing: border-box;
 }
+nav {
+  width: 100%;
+  background: black;
+}
+nav > ul {
+  width: 750px;
+  margin: auto;
+  display: flex;
+  list-style: none;
+}
+nav > ul li {
+  width: 100%;
+  position: relative;
+}
+nav > ul li:hover {
+  background: blue;
+}
+nav > ul li a {
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  transition: 0.5s;
+}
+
+nav > ul > li:hover > a {
+  font-size: 20px;
+}
+
+nav > ul > li > ul {
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  background: black;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+}
+
+nav > ul > li > ul > li:hover > a {
+  font-size: 20px;
+}
+
+.teamDtls {
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  list-style: none;
+  display: none;
+}
+
+.teamLi:hover > .teamDtls {
+  display: block;
+}
+
+.teamDtls > li:hover > a {
+  font-size: 20px;
+}
