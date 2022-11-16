@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #55f;
+  padding: 8px;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.d1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/nature1.jpg");
+  background-repeat: no-repeat;
+  background-position: 84% center;
+  background-size: cover;
+  transition: 1s;
+}
+.d2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/nature2.jpg");
+  background-repeat: no-repeat;
+  background-position: -100px center;
+  background-size: cover;
+  transition: 1s;
+}
+.d3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/nature3.jpg");
+  background-repeat: no-repeat;
+  background-position: -80px center;
+  background-size: cover;
+  transition: 1s;
+}
+
+.container > div {
+  overflow: hidden;
+  position: relative;
+}
+
+.container > div > div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container > div:hover > div {
+  width: 120%;
+  height: 120%;
+}
+
+/* 
+.choto {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 20px;
+  position: relative;
+}
+
+.chield {
+  padding: 12px 20px;
+  background: cornflowerblue;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ */
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.main > div {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-areas: "c1 c1 c2" "c3 c4 c2";
+}
+
+.c1 {
+  grid-area: c1;
+  background-image: url("../images/nature1.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.c2 {
+  grid-area: c2;
+  background-image: url("../images/nature2.jpg");
+  background-size: cover;
+}
+.c3 {
+  grid-area: c3;
+  background-image: url("../images/nature3.jpg");
+  background-size: cover;
+}
+.c4 {
+  grid-area: c4;
+  background-image: url("../images/nature2.jpg");
+  background-size: cover;
+}
+
+.tuhin {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  transition: 0.5s;
+}
+
+.c1:hover .tuhin {
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: arial;
+  text-shadow: 2px 2px 2px #000;
+}

@@ -1,0 +1,113 @@
+* {
+  /* Md: Saiful Bali */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  background: brown;
+}
+nav > ul {
+  width: 750px;
+  margin: auto;
+  display: flex;
+  list-style: none;
+}
+nav > ul li {
+  width: 150px;
+  position: relative;
+}
+nav > ul li:hover {
+  background: burlywood;
+}
+nav > ul li a {
+  color: black;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  transition: 0.3s;
+}
+nav > ul > li:hover > a {
+  font-size: 20px;
+}
+nav > ul > li > ul {
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  background: yellowgreen;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+nav > ul > li:hover > ul {
+  display: block;
+}
+nav > ul > li > ul > li:hover > a {
+  font-size: 20px;
+}
+.AboutTeam {
+  background: orchid;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  list-style: none;
+  display: none;
+}
+.team1:hover > .AboutTeam {
+  display: block;
+}
+.AboutTeam > li:hover > a {
+  font-size: 20px;
+}
+.main1 {
+  background: skyblue;
+}
+.main2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+}
+.card {
+  width: 250px;
+  box-shadow: 0px 0px 10px #000;
+  padding-bottom: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: auto 10px;
+  background: #fff;
+}
+.card > img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card > h2 {
+  color: #dc143b;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.card > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card > button {
+  text-align: center;
+  display: block;
+  background: #dc143b;
+  color: #fff;
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  border-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto;
+  text-transform: uppercase;
+}

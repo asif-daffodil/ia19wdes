@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/fb.jpg" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="p1">
+        <div class="d1"></div>
+      </div>
+      <div class="p2">
+        <div class="d2"></div>
+      </div>
+      <div class="p3">
+        <div class="d3"></div>
+      </div>
+    </div>
+
+    <!-- 
+    <div class="choto">
+      <div class="chield">100%</div>
+    </div> 
+    -->
+
+    <div class="main">
+      <div>
+        <div class="c1">
+          <div class="tuhin">Tuhin</div>
+        </div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).bind("contextmenu", function (e) {
+        return false;
+      });
+
+      $(document).keydown(function (event) {
+        if (event.keyCode == 123) {
+          // Prevent F12
+          return false;
+        } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+          // Prevent Ctrl+Shift+I
+          return false;
+        }
+      });
+    </script>
+  </body>
+</html>

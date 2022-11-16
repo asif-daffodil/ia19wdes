@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    background: #7D2780;
+}
+nav>ul{
+    width: 750px;
+    margin: auto;
+    display: flex;
+    list-style: none;
+}
+nav>ul>li{
+    width: 100%;
+    position: relative;
+}
+nav>ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    line-height: 60px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-weight: 600;
+    
+
+
+}
+nav>ul>li:hover>a{
+    background: rgb(19, 19, 230);
+    font-size: 20px;
+}
+nav>ul>li>ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    background: #7D2780;
+    display: none;
+    line-height: 40px;
+}
+nav>ul>li:hover>ul{
+    display: block;}
+
+nav>ul>li>ul>li:hover>a{
+    background: blue;
+    font-size: 20px;
+}
+.team2{
+    position: absolute;
+    background: #7D2780;
+    left: 100%;
+    top: 33%;
+    width: 100%;
+    list-style: none;
+    display: none;
+    
+    
+}
+.team:hover>.team2{
+    display: block;
+    background: #7D2780;
+    line-height: 40px;
+
+}
+.team>.team2>li:hover>a{
+    background: blue;
+    font-size: 20px;
+}
+.banner{
+    background: url("images/pexels-pixabay-461198.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+
+.overly{
+   
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.534);
+}
+.text{
+    width: 750px;
+    margin: auto;
+}
+
+.text h1{
+    padding-top: 150px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+  
+}
+.text p{
+    text-align: center;
+    color: white;
+}
+
+.searchBer{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    background: white;
+    width: 600px;
+    height: 55px;
+
+}
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+form button{
+    background: tomato;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+form .fa-search{
+    align-self: center;
+    padding: 10px 20px;
+    color: #777;
+
+
+}
