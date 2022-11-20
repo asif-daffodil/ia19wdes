@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$districBgColor: blue;
+
+@mixin commonCode($w, $h) {
+  background: $districBgColor;
+  width: $w;
+  height: $h;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dhaka {
+  @include commonCode(100px, 50px);
+}
+
+.rajshahi {
+  @include commonCode(200px, 100px);
+}
+
+.bd{
+    width: 200px;
+    height: 200px;
+    background: red;
+    >.cd{
+        width: 100px;
+        height: 100px;
+        background: green;
+        >.ad{
+            &:hover{}
+        }
+    }
+}
+
+.bd > .cd > .ad:hover {
+
+}

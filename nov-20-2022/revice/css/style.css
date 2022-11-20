@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  width: 750px;
+  margin: auto;
+  background: #444;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.nav > li {
+  width: 100%;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #fff;
+  line-height: 40px;
+}
+
+.nav > li:hover {
+  background: #00f;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 750px;
+  padding: 20px;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #00f;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: 95% 50%;
+}
+
+.submenu > ul {
+  list-style: none;
+}
+
+.submenu > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.aboutLi:hover > .submenu {
+  display: grid;
+}

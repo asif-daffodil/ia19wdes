@@ -1,0 +1,82 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: alom;
+  src: url("../fonts/Rubik_Distressed/RubikDistressed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "popin italic";
+  src: url("../fonts/Poppins/Poppins-Italic.ttf");
+}
+
+@font-face {
+  font-family: "popin bold";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+.parent {
+  display: grid;
+  margin: auto;
+  background: #ddd;
+}
+
+.parent > div {
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+}
+
+.parent > div:first-child {
+  font-family: alom;
+}
+
+.parent > div:nth-child(2) {
+  font-family: "popin italic";
+}
+
+.parent > div:nth-child(3) {
+  font-family: "popin bold";
+}
+
+@media screen and (max-width: 620px) {
+  .parent {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 8px;
+    grid-gap: 8px;
+  }
+
+  .parent > div {
+    padding: 8px;
+    background: #f99;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 980px) {
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+    grid-gap: 16px;
+  }
+  .parent > div {
+    padding: 16px;
+    background: #9f9;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .parent {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 24px;
+    grid-gap: 24px;
+  }
+  .parent > div {
+    padding: 24px;
+    background: #99f;
+  }
+}
