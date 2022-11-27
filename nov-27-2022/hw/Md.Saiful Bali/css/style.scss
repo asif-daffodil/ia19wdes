@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #8684b5;
+  display: grid;
+  grid-gap: 32px;
+  padding: 140px;
+  > .card {
+    border-radius: 6px;
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    flex-direction: column;
+    &:nth-child(1) {
+      > .card-header {
+        &::before {
+          background: url("../img/IMG_20190621_181103.jpg");
+          background-size: 130%;
+          background-position: 40% 30%;
+        }
+      }
+    }
+    &:nth-child(2) {
+      > .card-header {
+        &::before {
+          background: url("../img/Hrithik\ Roshan.jpg");
+          background-size: 140%;
+          background-position: 50% 0%;
+        }
+      }
+    }
+    &:nth-child(3) {
+      > .card-header {
+        &::before {
+          background: url("../img/Asif\ Abir\ sir.jpg");
+          background-size: 250%;
+          background-position: 50% 30%;
+        }
+      }
+    }
+    &:nth-child(4) {
+      > .card-header {
+        &::before {
+          background: url("../img/Asif\ Abir.jpg");
+          background-size: 200%;
+          background-position: 55% 30%;
+        }
+      }
+    }
+    &:nth-child(5) {
+      > .card-header {
+        &::before {
+          background: url("../img/mahafuz.jpg");
+          background-size: 170%;
+          background-position: 50% 20%;
+        }
+      }
+    }
+    &:nth-child(6) {
+      > .card-header {
+        &::before {
+          background: url("../img/Mehadi.jpg");
+          background-size: 250%;
+          background-position: 130px -8px;
+        }
+      }
+    }
+    &:nth-child(7) {
+      > .card-header {
+        &::before {
+          background: url("../img/Awal.jpg");
+          background-size: 250%;
+          background-position: 140px -10px;
+        }
+      }
+    }
+    &:nth-child(8) {
+      > .card-header {
+        &::before {
+          background: url("../img/All.jpg");
+          background-size: 250%;
+          background-position: 165px 0px;
+        }
+      }
+    }
+    > .card-header {
+      min-height: 100px;
+      background-color: #9bd9fe;
+      padding: 12px;
+      color: #fff;
+      position: relative;
+      border-radius: 6px 6px 0px 0px;
+      &::after {
+        content: "+";
+        width: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(36%, -36%);
+        background-color: #9bd9fe;
+        box-shadow: 0 0 6px #000;
+        text-align: center;
+      }
+      &::before {
+        content: "";
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border: 5px solid #fff;
+      }
+    }
+    > .card-body {
+      background: #fff;
+      padding-top: 50px;
+      > h2 {
+        font-family: "Dancing Script", cursive;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      > p {
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+        padding: 0 24px;
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+    }
+    > .card-footer {
+      background: #fff;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+      border-radius: 0px 0px 6px 6px;
+      > .snav {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        > li {
+          width: 40px;
+          margin: 5px;
+          > a {
+            list-style: none;
+            color: #adadad;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 1080px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 680px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
