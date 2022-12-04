@@ -1,0 +1,16 @@
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  &:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
