@@ -18,3 +18,15 @@
     line-height: 24px;
   }
 }
+
+.spPackage {
+  background: url("../images/packagebg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.accordion-button:not(.collapsed) {
+  font-weight: 600;
+  color: #383838;
+  background: transparent;
+}

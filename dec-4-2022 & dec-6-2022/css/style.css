@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../fonts/Poppins-Light.ttf");
+}
+.carousel-caption > h5 {
+  font-family: "Poppins-SemiBold";
+}
+.carousel-caption > p {
+  font-family: "Poppins-Light";
+  width: 456px;
+  line-height: 24px;
+}
+
+.spPackage {
+  background: red !important;
+  display: none;
+}/*# sourceMappingURL=style.css.map */
