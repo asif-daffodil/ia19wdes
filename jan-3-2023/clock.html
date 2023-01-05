@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row min-vh-100 d-flex">
+        <div class="col-md-5 m-auto border rounded-3 shadow text-center py-4">
+          <div id="firstPart" class="fs-4"></div>
+          <small id="secondPart" class="text-muted"></small>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const firstPart = document.getElementById("firstPart");
+      const secondPart = document.getElementById("secondPart");
+
+      const datFunc = () => {
+        const d = new Date();
+        const m = d.toLocaleString("default", { month: "long" });
+        const w = d.toLocaleString("default", { weekday: "long" });
+        const h = d.toLocaleString("default", {
+          hour: "numeric",
+          minute: "numeric",
+          second: "numeric",
+          hour12: true,
+        });
+        firstPart.textContent =
+          d.getDate() + "-" + m + "-" + d.getFullYear() + " (" + w + ")";
+        secondPart.textContent = h;
+      };
+
+      setInterval(() => datFunc(), 1000);
+    </script>
+  </body>
+</html>

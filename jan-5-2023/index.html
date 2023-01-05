@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .sefat,
+      .mohsin {
+        position: relative;
+      }
+      .sefat::before,
+      .mohsin::before {
+        content: "-";
+        width: 40px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mohsin::before {
+        content: "x";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row min-vh-100 d-flex">
+        <div class="col-md-6 m-auto">
+          <div
+            class="w-100 border border-1 border-secondary rounded shadow mb-3"
+          >
+            <div
+              class="title btn w-100 fs-3 border-bottom text-start rounded-0 sefat"
+            >
+              What is your name?
+            </div>
+            <div class="details fst-italic d-none" style="overflow: hidden">
+              My name is Sefatullah! I live in Bangladesh. I am a student. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Sapiente atque
+              quia laudantium non mollitia esse doloribus! Consectetur voluptas
+              sequi quisquam.
+            </div>
+          </div>
+          <div
+            class="w-100 border border-1 border-secondary rounded shadow mb-3"
+          >
+            <div
+              class="title btn w-100 fs-3 border-bottom text-start rounded-0 sefat"
+            >
+              What is your name?
+            </div>
+            <div class="details fst-italic d-none" style="overflow: hidden">
+              My name is Sefatullah! I live in Bangladesh. I am a student. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Sapiente atque
+              quia laudantium non mollitia esse doloribus! Consectetur voluptas
+              sequi quisquam.
+            </div>
+          </div>
+          <div
+            class="w-100 border border-1 border-secondary rounded shadow mb-3"
+          >
+            <div
+              class="title btn w-100 fs-3 border-bottom text-start rounded-0 sefat"
+            >
+              What is your name?
+            </div>
+            <div class="details fst-italic d-none" style="overflow: hidden">
+              My name is Sefatullah! I live in Bangladesh. I am a student. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Sapiente atque
+              quia laudantium non mollitia esse doloribus! Consectetur voluptas
+              sequi quisquam.
+            </div>
+          </div>
+          <div
+            class="w-100 border border-1 border-secondary rounded shadow mb-3"
+          >
+            <div
+              class="title btn w-100 fs-3 border-bottom text-start rounded-0 sefat"
+            >
+              What is your name?
+            </div>
+            <div class="details fst-italic d-none" style="overflow: hidden">
+              My name is Sefatullah! I live in Bangladesh. I am a student. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Sapiente atque
+              quia laudantium non mollitia esse doloribus! Consectetur voluptas
+              sequi quisquam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const title = document.querySelectorAll(".title");
+
+      for (let i = 0; i < title.length; i++) {
+        title[i].addEventListener("click", () => {
+          for (let j = 0; j < title.length; j++) {
+            if (i === j) {
+              const details = title[j].nextElementSibling;
+              if (details.classList.contains("d-none")) {
+                title[j].classList.add("mohsin");
+                title[j].classList.remove("sefat");
+                details.classList.add("p-3");
+                details.classList.remove("d-none");
+              } else {
+                title[j].classList.remove("mohsin");
+                title[j].classList.add("sefat");
+                details.classList.remove("p-3");
+                details.classList.add("d-none");
+              }
+            } else {
+              const details = title[j].nextElementSibling;
+              details.classList.remove("p-3");
+              details.classList.add("d-none");
+              title[j].classList.remove("mohsin");
+              title[j].classList.add("sefat");
+            }
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

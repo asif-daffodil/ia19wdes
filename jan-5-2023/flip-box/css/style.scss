@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  > .pain {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    > .sefat,
+    > .mohsin {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+      transition: 1s;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+    }
+    > .sefat {
+      background: url("../images/sefat.jpg") no-repeat;
+      background-size: cover;
+      background-position: -80px top;
+    }
+    > .mohsin {
+      background: url("../images/mohsin.jpg") no-repeat;
+      background-size: auto 300%;
+      background-position: center -80px;
+      transform: rotateX(180deg);
+    }
+    &:hover {
+      > .sefat {
+        transform: rotateX(180deg);
+      }
+      > .mohsin {
+        transform: rotateX(0deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row min-vh-100 d-flex">
+        <div class="col-md-6 m-auto rounded border shadow">
+          <div class="row text-center" id="tabTitle">
+            <div class="col-3 py-2 border-end btn rounded-0">Dhaka</div>
+            <div class="col-3 py-2 border-bottom border-end btn rounded-0">
+              Rajshahi
+            </div>
+            <div class="col-3 py-2 border-bottom border-end btn rounded-0">
+              Khulna
+            </div>
+            <div class="col-3 py-2 border-bottom btn rounded-0">Rongpur</div>
+          </div>
+          <div
+            class="row position-relative"
+            style="height: 150px"
+            id="tabDetails"
+          >
+            <div
+              class="col-12 position-absolute top-0 start-0 p-4"
+              style="height: 150px"
+            >
+              Dhaka Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum ducimus sunt blanditiis praesentium cum corporis aut
+              laborum a iusto neque.
+            </div>
+            <div
+              class="col-12 position-absolute top-0 start-0 p-4 d-none"
+              style="height: 150px"
+            >
+              Rajshahi Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum ducimus sunt blanditiis praesentium cum corporis aut
+              laborum a iusto neque.
+            </div>
+            <div
+              class="col-12 position-absolute top-0 start-0 p-4 d-none"
+              style="height: 150px"
+            >
+              Khulna Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum ducimus sunt blanditiis praesentium cum corporis aut
+              laborum a iusto neque.
+            </div>
+            <div
+              class="col-12 position-absolute top-0 start-0 p-4 d-none"
+              style="height: 150px"
+            >
+              Rongpur Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dolorum ducimus sunt blanditiis praesentium cum corporis aut
+              laborum a iusto neque.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const tabTitle = document.querySelector("#tabTitle");
+      const tabDetails = document.querySelector("#tabDetails");
+      const tabChilds = Array.from(tabTitle.children);
+      const tabDetailsArr = Array.from(tabDetails.children);
+      for (let i = 0; i < tabChilds.length; i++) {
+        tabChilds[i].addEventListener("click", () => {
+          tabChilds[i].classList.remove("border-bottom");
+          tabDetailsArr[i].classList.remove("d-none");
+          for (let j = 0; j < tabChilds.length; j++) {
+            if (j !== i) {
+              tabChilds[j].classList.add("border-bottom");
+              tabDetailsArr[j].classList.add("d-none");
+            }
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
